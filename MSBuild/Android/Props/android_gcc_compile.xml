@@ -126,10 +126,9 @@
   <StringListProperty Name="SystemPreprocessorDefinitions" Category="General" Visible="false" Switch="D">
   </StringListProperty>
   <EnumProperty Name="Architecture" Category="General" Visible="false">
-    <EnumValue Name="armv5te" Switch="march=armv5te -mtune=xscale">
-    </EnumValue>
-    <EnumValue Name="armv7-a" Switch="march=armv7-a -mtune=xscale">
-    </EnumValue>
+    <EnumValue Name="armv5te" Switch="march=armv5te -mtune=xscale" />
+    <EnumValue Name="armv7-a" Switch="march=armv7-a -mtune=xscale" />
+    <EnumValue Name="armv8-a" Switch="march=armv8-a" />
   </EnumProperty>
   <BoolProperty Name="IgnoreVaListWarning" Category="General" Visible="false" Switch="Wno-psabi">
   </BoolProperty>

@@ -43,7 +43,7 @@
         <CompileAs                    Condition="('%(ClCompile.CompileAs)' == 'Default' and ('%(ClCompile.Extension)' != '.c' and '%(ClCompile.Extension)' != '.s' and '%(ClCompile.Extension)' != '.asm'))">CompileAsCpp</CompileAs>
         <MinimalRebuildFromTracking   Condition="'$(BuildType)' != 'Build' or '$(ForceRebuild)' == 'true'">false</MinimalRebuildFromTracking>
         <Architecture                 Condition="'$(AndroidArch)' == 'armv5te'">armv5te</Architecture>
-        <Architecture                 Condition="'$(AndroidArch)' == 'armv7-a'">armv7-a</Architecture>
+        <Architecture                 Condition="'$(AndroidArch)' == 'armv8-a'">armv8-a</Architecture>
         <BrowseInformation			  >false</BrowseInformation>
       </ClCompile>
     </ItemGroup>
@@ -269,6 +269,7 @@
     <PropertyGroup>
       <ApkLibsPath Condition="'$(PlatformShortName)' == 'arm' and '$(AndroidArch)' == 'armv5te'">armeabi</ApkLibsPath>
       <ApkLibsPath Condition="'$(PlatformShortName)' == 'arm' and '$(AndroidArch)' == 'armv7-a'">armeabi-v7a</ApkLibsPath>
+      <ApkLibsPath Condition="'$(PlatformShortName)' == 'arm64' and '$(AndroidArch)' == 'armv8-a'">arm64-v8a</ApkLibsPath>
       <ApkLibsPath Condition="'$(PlatformShortName)' == 'x86'">x86</ApkLibsPath>
       <ApkLibsPath Condition="'$(PlatformShortName)' == 'mips'">mips</ApkLibsPath>
     </PropertyGroup>

@@ -128,7 +128,7 @@ namespace vs_android.Build.CPPTasks.Android
 
 		protected override int ExecuteTool(string pathToTool, string responseFileCommands, string commandLineCommands)
 		{
-            this.TrackFileAccess = false;
+			this.TrackFileAccess = false;
 
 			// Copy over the .so file to the correct directory in the build structure
 			Directory.CreateDirectory(AntBuildPath + "\\" + BUILD_LIB_PATH + "\\" + ApkLibsPath);
