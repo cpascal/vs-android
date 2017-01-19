@@ -496,8 +496,10 @@
            Text="Architecture must be set to mips for the mips toolchain!"></Error>
 
     <!-- NDK min version check -->
+    <!--
     <Error Condition="!exists('$(AndroidNdkDir)\toolchains\arm-linux-androideabi-clang3.5\config.mk')"
            Text="$(NDKWrongVersion)"></Error>
+    -->
 
     <Warning Condition="'$(AndroidArch)' == 'x86'"
            Text="The x86 toolchain isn't fully tested with vs-android. Use at your own risk."></Warning>
