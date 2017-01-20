@@ -474,7 +474,7 @@
     <!-- Error out if the project references a missing platform toolset -->
     <VCMessage Code="MSB8008" Type="Error" Arguments="$(PlatformToolset)" Condition="!(exists('$(VCTargetsPath)\Platforms\Android\PlatformToolsets\$(PlatformToolset)\Microsoft.Cpp.Android.$(PlatformToolset).targets'))"/>
 
-    <Error Condition="$(VisualStudioVersion) != '10.0' and $(VisualStudioVersion) != '11.0' and $(VisualStudioVersion) != '12.0'" 
+    <Error Condition="$(VisualStudioVersion) != '10.0' and $(VisualStudioVersion) != '11.0' and $(VisualStudioVersion) != '12.0' and $(VisualStudioVersion) != '14.0'" 
            Text="Unknown version of Visual Studio: $(VisualStudioVersion)" ></Error>
 
     <!-- Android NDK Checks -->
