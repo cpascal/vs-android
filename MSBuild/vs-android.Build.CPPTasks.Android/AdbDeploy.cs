@@ -135,8 +135,8 @@ namespace vs_android.Build.CPPTasks.Android
 			return (MakeStringReplacements(DeviceArgs) + " " + MakeStringReplacements(Params)).Trim();
 		}
 
-#if !VS2010DLL
-		protected override string GenerateResponseFileCommands(VCToolTask.CommandLineFormat format)
+#if !VS2010DLL && !VS2015DLL
+        protected override string GenerateResponseFileCommands(VCToolTask.CommandLineFormat format)
 		{
 			return string.Empty;
 		}
